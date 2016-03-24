@@ -5,12 +5,29 @@
 		<title>爱美食</title>
 	</head>
 	<body>
+		<div class="login">
+    		<div class="login-title">爱美食<span><a href="javascript:void(0);" class="close-login">X</a></span></div>
+    		<div class="login-input-content">
+        		<div class="login-input">
+            		<label>用户名：</label>
+            		<input type="text" placeholder="请输入用户名"  name="info[username]" id="username" class="list-input"/>
+       			</div>
+        		<div class="login-input">
+            		<label>登录密码：</label>
+            		<input type="password" placeholder="请输入登录密码" name="info[password]" id="password" class="list-input"/>
+        		</div>
+    		</div>
+   		 	<div class="login-button"><a href="javascript:void(0);" id="login-button-submit">登录</a></div>
+		</div>
 		<div class="wrap">
 			<a name="return"></a>
 			<div class="head">
 				<div class="sub">
-					<a class="register" href="###">注册</a>
-					<a class="register" href="###">登录</a>
+					<!-- <div class="login-header"><a href="javascript:void(0);">注册|登录</a></div> -->
+					<a class="register login-header" href="###">注册</a>
+					<a class="register login-header" href="###">登录</a>
+					<a class="register" href="###">送至：</a>
+					<input type="text" id="cityChoice" style="width:70px;">
 					<i class="logo">爱美食</i>
 					<div class="line"></div>
 					<i class="coffee"></i>  
@@ -198,5 +215,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="jquery-1.8.3.min.js"></script>
+		<script src="index.js"></script>
 	</body>
 </html>
